@@ -44,7 +44,7 @@ def convert_2(request):
     ag_list = output[0]
     bw46_list = output[1]
     return render(request, 'convert_2.html', {'uinput': allele_list, 
-    'conversion': ag_list, 'bw4_6': bw46_list})
+    'conversion': ag_list, 'bw4_6': bw46_list, 'zipped_list': zip(allele_list, ag_list, bw46_list)})
     
     
 def convert_3(request):

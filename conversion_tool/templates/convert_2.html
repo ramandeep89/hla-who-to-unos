@@ -64,11 +64,13 @@
                 </tr>
             </thead>
             <tbody>
-            <tr class="bg-light">
-                <td> {{uinput}} </td>
-                <td> {{conversion}} </td>
-                <td> {{bw4_6}} </td>
-            </tr>
+            {% for allele, antigen, bw46 in zipped_list %}
+				<tr class="bg-light">
+					<td>{{allele}}</td>
+					<td>{{antigen}}</td>
+					<td>{{bw46}}</td>
+				</tr>
+			{% endfor %}
             </tbody>
         </table>    
 
